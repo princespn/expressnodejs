@@ -1,0 +1,18 @@
+html(lang='en')
+	head
+		title= 'Cost Calculator listings'
+		link(href='/css/styles.css', rel='stylesheet')
+	body
+	header
+		h1= 'Cost Calculator Listings and prices'
+		
+		table
+		tr 
+			td linnworks code :
+			td #{listing.linnworks_code}
+		tr
+			td invoice currency :
+			td #{listing.invoice_currency}	
+		tr
+			td product name :			 
+			td #{listing.product_name}

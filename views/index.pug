@@ -1,0 +1,31 @@
+html(lang='en')
+	head
+		title= 'Cost Calculator'
+		link(href='/css/styles.css', rel='stylesheet')
+	body
+	header
+		h1= 'Cost Calculator Listings and prices'
+	section
+		div.container
+	table
+		tr
+		th Linnworks code
+		th Product name
+		th Purchase price
+		th Category
+		th Suplier
+		th Currency	
+		th Landed price
+		
+		for person in personList
+			tr
+				td= person.linnworks_code
+				td= person.product_name
+				td= person.purchase_price
+				td= person.category
+				td= person.supplier
+				td= person.invoice_currency
+				td= person.landed_price_gbp
+		footer
+		a.foo_link(href='about.html', target='_blank') About Us
+				

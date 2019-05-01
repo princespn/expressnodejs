@@ -1,0 +1,28 @@
+doctype html
+html
+head
+title=title
+body
+    h1 Cost calculator listing and Prices
+
+    div
+   table(border='1')
+    thead
+      tr
+          th Linnworks code
+          th Product name
+          th Category
+          th Supplier
+          th Invoice Currency
+          th Purchase price
+          th Landed price(GBP)
+    tbody
+      each item in studentList
+        tr
+          td=item.linnworks_code
+          td=item.product_name
+          td=item.category
+          td=item.supplier
+          td=item.invoice_currency
+          td=item.purchase_price
+          td=item.landed_price_gbp
